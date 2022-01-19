@@ -1,36 +1,15 @@
 {
-    "name": "symfony/polyfill-php81",
+    "name": "jworman/polyfill-php81",
     "type": "library",
-    "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions",
+    "description": "Zf1s polyfill backporting some PHP 8.1+ features to lower PHP versions",
     "keywords": ["polyfill", "shim", "compatibility", "portable"],
-    "homepage": "https://symfony.com",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Nicolas Grekas",
-            "email": "p@tchwork.com"
-        },
-        {
-            "name": "Symfony Community",
-            "homepage": "https://symfony.com/contributors"
-        }
-    ],
     "require": {
-        "php": ">=7.1"
+        "php": ">=5.3"
     },
     "autoload": {
-        "psr-4": { "Symfony\\Polyfill\\Php81\\": "" },
-        "files": [ "bootstrap.php" ],
-        "classmap": [ "Resources/stubs" ]
-    },
-    "minimum-stability": "dev",
-    "extra": {
-        "branch-alias": {
-            "dev-main": "1.23-dev"
-        },
-        "thanks": {
-            "name": "symfony/polyfill",
-            "url": "https://github.com/symfony/polyfill"
-        }
+        "psr-4": {"Zf1s\\Polyfill\\Php81\\": ""},
+        "files": ["bootstrap.php" ],
+        "classmap": ["Resources/stubs"]
     }
 }
