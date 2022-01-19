@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use Symfony\Polyfill\Php81 as p;
+use Zf1s\Polyfill\Php81 as p;
 
 if (\PHP_VERSION_ID >= 80100) {
     return;

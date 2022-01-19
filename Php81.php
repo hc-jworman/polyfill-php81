@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Polyfill\Php81;
+namespace Zf1s\Polyfill\Php81;
 
 /**
  * @author Nicolas Grekas <p@tchwork.com>
