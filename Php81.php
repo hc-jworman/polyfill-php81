@@ -1,26 +1,15 @@
 <?php
 
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
+namespace Zf1s\Polyfill\Php81;
 
-namespace Symfony\Polyfill\Php81;
-
-/**
- * @author Nicolas Grekas <p@tchwork.com>
- *
- * @internal
- */
 final class Php81
 {
-    public static function array_is_list(array $array): bool
+    /**
+     * @return bool
+     */
+    public static function array_is_list(array $array)
     {
-        if ([] === $array || $array === array_values($array)) {
+        if (array() === $array || $array === \array_values($array)) {
             return true;
         }
 
